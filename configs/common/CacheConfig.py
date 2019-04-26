@@ -114,6 +114,7 @@ def config_cache(options, system):
                                   assoc=options.l1i_assoc)
             dcache = dcache_class(size=options.l1d_size,
                                   assoc=options.l1d_assoc)
+            #prefetch = prefetch_class()
 
             # If we have a walker cache specified, instantiate two
             # instances here

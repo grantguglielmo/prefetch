@@ -64,6 +64,8 @@ class L1_ICache(L1Cache):
     writeback_clean = True
 
 class L1_DCache(L1Cache):
+    prefetch_on_access = True
+    prefetcher = StridePrefetcher(latency = 1)
     pass
 
 class L2Cache(Cache):
