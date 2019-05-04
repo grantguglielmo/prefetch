@@ -64,8 +64,8 @@ class L1_ICache(L1Cache):
     writeback_clean = True
 
 class L1_DCache(L1Cache):
-    prefetch_on_access = True
-    prefetcher = SignaturePathPrefetcher(latency = 1)
+    prefetch_on_access = False
+    prefetcher = StridePrefetcher(latency = 1, degree = 4)
     pass
 
 class L2Cache(Cache):
