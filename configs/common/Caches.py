@@ -65,7 +65,7 @@ class L1_ICache(L1Cache):
 
 class L1_DCache(L1Cache):
     prefetch_on_access = True
-    prefetcher = TaggedPrefetcher(latency = 1, degree = 4)
+    prefetcher = SignaturePathPrefetcher(latency = 1)
     pass
 
 class L2Cache(Cache):
