@@ -548,7 +548,7 @@
                         "pid": 100, 
                         "kvmInSE": false, 
                         "cxx_class": "Process", 
-                        "executable": "../no_prefetch", 
+                        "executable": "../openbench/tests/zstd-1.3.3/tests/fullbench", 
                         "drivers": [], 
                         "system": "system", 
                         "gid": 100, 
@@ -565,7 +565,8 @@
                         "path": "system.cpu.workload", 
                         "name": "workload", 
                         "cmd": [
-                            "../no_prefetch"
+                            "../openbench/tests/zstd-1.3.3/tests/fullbench", 
+                            "-b1"
                         ], 
                         "errout": "cerr", 
                         "useArchPT": false, 
